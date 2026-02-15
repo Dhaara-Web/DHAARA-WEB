@@ -3,6 +3,9 @@ import Countdown from './components/Countdown'
 import Gallery from './components/Gallery'
 import Tickets from './components/Tickets'
 import dhaaraLogo from './assets/logo_gold.png'
+import image1 from './assets/About_page_images/image1.png'
+import image2 from './assets/About_page_images/image2.png'
+import image3 from './assets/About_page_images/image3.png'
 
 function App() {
   return (
@@ -95,7 +98,7 @@ function App() {
         {/* Mobile: relative (part of grid) | Desktop: absolute (positioned top right) */}
         <div className="relative md:absolute md:top-0 md:right-0 transform rotate-0 md:-rotate-2 hover:rotate-12 transition-all duration-700 z-10">
           <img 
-            src= "src\assets\About_page_images\image1.png"
+            src={image1}
             alt="Event Poster 1" 
             className="h-[380px] md:h-[450px] w-auto" 
           />
@@ -105,7 +108,7 @@ function App() {
         {/* Mobile: relative | Desktop: absolute (positioned left) */}
         <div className="relative md:absolute md:bottom-32 md:right-48 transform rotate-0 md:-rotate-5 hover:rotate-0 transition-all duration-500 z-20">
           <img 
-            src="src\assets\About_page_images\image2.png"
+            src={image2}
             alt="Event Poster 2" 
             className="h-[380px] md:h-[450px] w-auto "
           />
@@ -115,8 +118,8 @@ function App() {
         {/* Mobile: relative | Desktop: absolute (positioned bottom right) */}
         <div className="relative md:absolute md:bottom-0 md:right-0 transform rotate-0 md:-rotate-12 hover:rotate-0 transition-all duration-500 z-30">
           <img 
-            src="src\assets\About_page_images\image3.png"
-            alt="Event Poster 2"
+            src={image3}
+            alt="Event Poster 3"
             className="h-[380px] md:h-[420px] w-auto"
           />
         </div>

@@ -110,18 +110,10 @@ const Timeline = () => {
     : 0;
 
   return (
-    <section id="timeline" className="relative py-24 px-4 overflow-hidden min-h-screen flex items-center justify-center">
+    <section id="timeline" className="relative py-24 px-4 overflow-hidden min-h-screen flex items-center justify-center backdrop-blur-md bg-slate-900/60">
       
        {/* Background */}
-       <div 
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-20"
-        style={{
-          backgroundImage: `url(${dhaaraLogo})`,
-          filter: 'brightness(0.2) blur(3px)',
-          transform: 'scale(1.2)'
-        }}
-      />
-      <div className="fixed inset-0 bg-slate-900/80 -z-10 backdrop-blur-sm" />
+       
 
       <div className="container mx-auto max-w-5xl relative z-10">
         <motion.h2 

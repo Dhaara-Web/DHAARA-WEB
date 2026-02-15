@@ -8,12 +8,9 @@ import bgLogo from "../assets/logo_gold.png"; // center background logo
 
 const MessagesSection = () => {
   return (
-    <section className="relative py-32  text-white overflow-hidden">
+    <section className="relative py-32 text-white overflow-hidden backdrop-blur-md bg-slate-900/60 ">
 
       {/* center background logo */}
-      <div className="absolute inset-0 flex justify-center items-center opacity-10">
-        <img src={bgLogo} className="w-[500px]" />
-      </div>
 
       <div className="max-w-5xl mx-auto relative z-10 flex flex-col gap-32">
 

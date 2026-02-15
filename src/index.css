@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+@layer utilities {
+  .ticket-fan-base {
+    @apply absolute transition-all duration-1000 ease-out origin-bottom;
+    transform: rotate(0deg) translateX(0);
+  }
+
+  /* MOBILE: Smaller spread so they don't hit the screen edges */
+  .is-visible .ticket-1 { transform: rotate(-15deg) translateX(-30px); }
+  .is-visible .ticket-2 { transform: rotate(-5deg) translateX(-10px); }
+  .is-visible .ticket-3 { transform: rotate(5deg) translateX(10px); }
+  .is-visible .ticket-4 { transform: rotate(15deg) translateX(30px); }
+
+  /* DESKTOP: Full spread (md: 768px and up) */
+  @media (min-width: 768px) {
+    .is-visible .ticket-1 { transform: rotate(-25deg) translateX(-60px); }
+    .is-visible .ticket-2 { transform: rotate(-10deg) translateX(-20px); }
+    .is-visible .ticket-3 { transform: rotate(5deg) translateX(20px); }
+    .is-visible .ticket-4 { transform: rotate(20deg) translateX(60px); }
+  }
+}

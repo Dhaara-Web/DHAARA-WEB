@@ -23,7 +23,7 @@ const timelineData = [
   {
     id: 4,
     title: "Event Management Workshop",
-    date: "2026-02-08", // Future
+    date: "2026-03-08", // Future
   },
   {
     id: 5,
@@ -82,7 +82,7 @@ const TimelineItem = ({ data, index }) => {
         transition-all duration-500 cursor-default hover:scale-105 border border-slate-700/50
         ${active
           ? 'bg-gradient-to-br from-amber-400 to-amber-500 text-slate-900' // Gradient for active items
-          : 'bg-slate-800/80 backdrop-blur-sm text-gray-200' 
+          : 'bg-amber-50/40 backdrop-blur-sm text-gray-200' 
         }
         ${isEven ? 'md:text-right' : 'md:text-left'}
       `}>
@@ -110,7 +110,7 @@ const Timeline = () => {
     : 0;
 
   return (
-    <section id="timeline" className="relative py-24 px-4 overflow-hidden min-h-screen flex items-center justify-center backdrop-blur-md bg-slate-900/60">
+    <section id="timeline" className="relative py-24 px-4 overflow-hidden min-h-screen flex items-center justify-center">
       
        {/* Background */}
        

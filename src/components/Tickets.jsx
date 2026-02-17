@@ -32,7 +32,7 @@ const Tickets = () => {
     <section 
       id="tickets" 
       ref={sectionRef} 
-      className="relative py-20 px-4 backdrop-blur-md bg-slate-900/60 overflow-hidden"
+      className="relative py-20 px-4 overflow-hidden"
     >
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">

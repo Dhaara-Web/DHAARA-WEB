@@ -123,7 +123,7 @@ export default function Sponsors() {
   };
 
   return (
-    <section id="sponsors" className="py-24 px-4 bg-slate-950 text-white min-h-screen relative overflow-hidden">
+    <section id="sponsors" className="py-24 px-4 text-white min-h-screen relative overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         
         {/* --- Section Header --- */}
